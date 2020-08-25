@@ -1,0 +1,133 @@
+$urlpath: '../asset/image';
+
+.home-logout {
+  width: 100%;
+  height: 100vh;
+  background: url('#{$urlpath}/home.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center;
+  text-align: center;
+  h1 {
+    color: white;
+  }
+  .logout {
+    padding-top: 200px;
+    h1 {
+      margin: 0 0 20px 0;
+    }
+    img {
+      position: relative;
+      top: -1px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.home-login {
+  width: 100%;
+  height: 100%;
+  // background: url('#{$urlpath}/home.jpg');
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  h1,
+  h3 {
+    color: white;
+  }
+  .login-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: darkred;
+    border-bottom: 5px solid;
+    border-image-source: radial-gradient(
+      40% 50px at center center,
+      rgb(163, 115, 32),
+      rgb(239, 234, 126),
+      rgb(163, 115, 32)
+    );
+    border-image-slice: 1;
+    h1 {
+      text-align: justify;
+    }
+    .login-user {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
+        top: 2px;
+        margin: 0 10px 0 0;
+      }
+      h3 {
+        margin: 0 10px 0 0;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+  .pagination {
+    justify-content: center;
+  }
+  .MuiPaginationItem-root {
+    font-size: 1.5rem;
+  }
+  .MuiPaginationItem-textPrimary.Mui-selected {
+    font-weight: bold;
+  }
+}
+
+.login-main {
+  color: black;
+  .filter {
+    color: black;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    .filter-text {
+      font-weight: bolder;
+      border-bottom: 3px solid rosybrown;
+    }
+    .all-filter {
+      .single-filter {
+        .filter-head {
+          text-transform: uppercase;
+        }
+        .filter-list {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          padding: 10px;
+          overflow: scroll;
+          height: 300px;
+        }
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+      }
+    }
+  }
+  .restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      width: 18rem;
+      .card-image {
+        height: 180px;
+        width: 286px;
+      }
+    }
+  }
+}
